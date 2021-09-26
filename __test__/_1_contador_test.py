@@ -34,6 +34,8 @@ class Test_Contador1(unittest.TestCase):
         self.assertEqual(contador.valor, 0)
 
         self.assertRaises(ValueError, contador.decrementar)
+        with self.assertRaisesRegex(ValueError, 'Imposible decrementar el contador.'):
+            contador.decrementar()
 
 
 if __name__ == "__main__":

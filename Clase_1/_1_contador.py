@@ -21,7 +21,7 @@ class Contador():
         if self.valor > 0:
             self.valor = self.valor - 1
         else:
-            raise ValueError
+            raise ValueError('Imposible decrementar el contador.')
 
 
 if __name__ == "__main__":
@@ -40,5 +40,5 @@ if __name__ == "__main__":
 
     try:
         objeto_contador.decrementar()
-    except ValueError:
-        print("El contador no puede ser decrementado.")
+    except ValueError as error:
+        print(error)
