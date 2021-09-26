@@ -19,6 +19,12 @@ Partes de un test:
     -> Ejercitación del comportamiento: accion a testear
     -> Post condición: objetivo del test
 
+
+Casos que quedan fuera del testing: 
+    - Constructores 
+    - Guetters 
+    - Setters
+
 Como framework para nuestra suite de test vamos a utilizar 
  https://docs.python.org/3/library/unittest.html
 
