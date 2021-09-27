@@ -1,0 +1,62 @@
+""" Ejercitación de la clase 1 
+
+    Para realizar la practica debera clonar el repositorio.
+    Seguidamente crear una rama con su: "nombre-apellido", 
+    luego crear una carpeta con su: "nombre_apellido" y dentro 
+    creara los modulos de clase y testing.
+
+    Ejemplo:
+
+        >>> niko@desktop:~/Python/POO-Python$  tree
+
+            .
+            ├── Clase_1
+            │   ├── calculadora.py
+            │   ├── contador.py
+            │   ├── Practica
+            │   │   ├── Ejercitacion.txt
+            │   │   └── nicolas_paneblanco
+            │   │       ├── contador.py
+            │   │       └── contador_test.py
+            │   ├── Teoria 1
+            │   └── usuario.py
+            ├── README.md
+            └── __test__
+                ├── calculadora_test.py
+                ├── contador_test.py
+                ├── Testing
+                └── usuario_test.py
+"""
+______________________________________________________
+
+"""
+    Ejercicio 1:
+        Modelar el objeto fecha en donde tendra:
+            - un dia 
+            - un mes 
+            - un anio 
+        
+        y debera poder compararse con otra fecha:
+            - (<, >, <=, >=, ==)
+            - esta entre "una_fecha" y "otra_fecha"
+
+        Realizar los test necesarios que validen 
+        el comportamiento.  
+"""
+
+"""
+    Ejercicio 2:
+        Modelar el objeto caja de ahorro:
+            - un titular
+            - un saldo
+        
+        y debera poder:
+            - depositar un monto
+            - extraer un monto
+            - en el caso de querer extraer un monto superior 
+              al monto disponiple arrojara una 
+              excepcion ValueError("Imposible realizar extracción.")
+
+        Realizar los test necesarios que validen 
+        el comportamiento.  
+"""
