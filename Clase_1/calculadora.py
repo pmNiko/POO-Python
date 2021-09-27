@@ -10,7 +10,7 @@
 """
 
 
-class Calculadora():
+class Calculadora(object):
     """ Clase Calculadora  """
 
     __resultado = 0  # propiedad privada

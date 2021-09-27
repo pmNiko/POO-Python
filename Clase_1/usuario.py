@@ -5,7 +5,7 @@
 """
 
 
-class Usuario():
+class Usuario(object):
     def __init__(self, nick, password, email) -> None:
         self.__nick = nick
         self.__password = password

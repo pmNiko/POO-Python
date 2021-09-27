@@ -6,7 +6,7 @@
 """
 
 
-class Contador():
+class Contador(object):
     """ La clase Contador sabe incrementar y decrementar su valor. """
     # atributo de la clase
     valor = 0
