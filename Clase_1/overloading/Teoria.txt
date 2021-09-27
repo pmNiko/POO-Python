@@ -22,11 +22,11 @@ en innumerables problemas a resolver esto hace que sea muy empleado y útil de a
 
     def __add__ (self, v):
         # Sumar dos Vectores
-        return Vector (self.x + v.x, self.y + v.y)
+        return (self.x + v.x, self.y + v.y)
 
     def __sub__ (self, v):
         # Restar dos Vectores
-        return Vector (self.x - v.x, self.y - v.y)
+        return (self.x - v.x, self.y - v.y)
 
 
         Entonces 
