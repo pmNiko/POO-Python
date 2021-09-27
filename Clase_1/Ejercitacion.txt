@@ -28,6 +28,16 @@
                 ├── contador_test.py
                 ├── Testing
                 └── usuario_test.py
+
+    Nota: para correr los test siguiendo la estructura antes especificada 
+    debe hacer uso del shortcut: ctrl + shift + P 
+    En el cuadro de busqueda que se abre escriba: Python: Configure Tests
+    Seleccione framework: unittest
+    Seleccione el directorio con su nombre_apellido
+    Seleccione *_test.py 
+    Por ultimo ya puede ir al icono de Testing y sus test estaran cargados 
+    y listos para ejecutarse.
+
 """
 ______________________________________________________
 
