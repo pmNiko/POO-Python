@@ -33,3 +33,25 @@ Como framework para nuestra suite de test vamos a utilizar
 
 Veamos dentro de la carpeta test la estructura básica de un test unitario 
 en el archivo contador_test.py
+
+
+Nota: 
+
+    unittest nos permite mediante setUp() definir objetos 
+    accesibles a toda la clase en la que se esta ejecutando. 
+
+    Ejemplo:
+
+        import unittest
+        from caja_de_ahorro import CajaDeAhorro
+
+        class TestMiObjeto(unittest.TestCase):
+            # ----- setUp ------ #
+            def setUp(self):
+                self.cuenta = CajaDeAhorro()
+
+            test_accesoAObjeto(self):
+                self.assertTrue(hasattr(self.cuenta, 'saldo'))
+
+
+    De esta manera poemos reutilizar nustras intancias y reducir codigo.
