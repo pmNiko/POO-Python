@@ -43,21 +43,6 @@ ______________________________________________________
 
 """
     Ejercicio 1:
-        Modelar el objeto fecha en donde tendra:
-            - un dia 
-            - un mes 
-            - un anio 
-        
-        y debera poder compararse con otra fecha:
-            - (<, >, <=, >=, ==)
-            - esta entre "una_fecha" y "otra_fecha"
-
-        Realizar los test necesarios que validen 
-        el comportamiento.  
-"""
-
-"""
-    Ejercicio 2:
         Modelar el objeto caja de ahorro:
             - un titular
             - un saldo
@@ -68,6 +53,21 @@ ______________________________________________________
             - en el caso de querer extraer un monto superior 
               al monto disponiple arrojara una 
               excepcion ValueError("Imposible realizar extracción.")
+
+        Realizar los test necesarios que validen 
+        el comportamiento.  
+"""
+
+"""
+    Ejercicio 2:
+        Modelar el objeto fecha en donde tendra:
+            - un dia 
+            - un mes 
+            - un anio 
+        
+        y debera poder compararse con otra fecha:
+            - (<, >, <=, >=, ==)
+            - esta entre "una_fecha" y "otra_fecha"
 
         Realizar los test necesarios que validen 
         el comportamiento.  
