@@ -66,7 +66,7 @@ ______________________________________________________
             - un anio 
         
         y debera poder compararse con otra fecha:
-            - (<, >, <=, >=, ==)
+            - (==, <, <=, >=, >)
             - esta entre "una_fecha" y "otra_fecha"
 
         Realizar los test necesarios que validen 
