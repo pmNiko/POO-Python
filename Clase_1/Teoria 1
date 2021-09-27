@@ -65,7 +65,7 @@ seguidamente se indentan estado y comportamiento de la misma.
 
 En Python se utiliza "self" para hacer referencia asi mismo.
 
-Veamos un ejemplo en el script _1_contador.py
+Veamos un ejemplo en el script contador.py
 
 ___________________________________________________________________________________________
 
@@ -109,7 +109,7 @@ Propiedades:
       Veremos que la propiedad no fue accedida.
 
 
-    Veamos el ejemplo en el script _2_calculadora.py
+    Veamos el ejemplo en el script calculadora.py
 
 
 ____________________________________________________________________________________________
@@ -140,4 +140,4 @@ Constructores:
 
 
     En Python podemos hacer uso del mismo a traves del metodo __init__
-    Para entenderlo mejor veamos el script _3_usuario.py
+    Para entenderlo mejor veamos el script usuario.py

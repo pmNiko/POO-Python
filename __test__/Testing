@@ -32,4 +32,4 @@ Como framework para nuestra suite de test vamos a utilizar
 
 
 Veamos dentro de la carpeta test la estructura básica de un test unitario 
-en el archivo _1_contador_test.py
+en el archivo contador_test.py

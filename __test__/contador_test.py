@@ -1,5 +1,5 @@
 import unittest
-from Clase_1._1_contador import Contador
+from Clase_1.contador import Contador
 
 
 class Test_Contador1(unittest.TestCase):

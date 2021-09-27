@@ -1,5 +1,5 @@
 import unittest
-from Clase_1._3_usuario import Usuario
+from Clase_1.usuario import Usuario
 
 
 class TestUsuario(unittest.TestCase):
