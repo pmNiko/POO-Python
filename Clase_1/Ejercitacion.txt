@@ -72,3 +72,55 @@ ______________________________________________________
         Realizar los test necesarios que validen 
         el comportamiento.  
 """
+
+"""
+    Ejercicio 3:
+        Modelar la clase Robot con las siguientes caracteristicas:
+            - Un robot posee una bateria en la cual almacena su energia.
+              La carga de la bateria de encuentra en el rango de 0 a 100.
+            - Un robot puede:
+                # caminar(metros): le consume 1 unidad cada 10 metros.
+                # cargarBateria(una_carga): le agrega una determinada cantidad
+                  de unidades, pero no puede superar las 100 unidades de la bateria.
+                # disparar(un_objetivo): le consume el 10% de la bateria que posea. 
+
+    Realizar los test necesarios que validen 
+    el comportamiento.         
+"""
+
+"""
+    Ejercicio 4:
+        Modelar la clase Alien con las siguientes caracteristicas:
+            - Un alien posee una energia que va en el rango de 0 a 5.
+            - Un alien puede:
+                # estaVivo: retorna verdadero solo si su energia es mayor a 0.
+                # recibirDisparo: decrementa la energia del alien en 1.
+                # reponerse: aumenta la energia del alien en dos unidades. 
+
+    Realizar los test necesarios que validen 
+    el comportamiento del alien, ademas verifique que cuando el robot realice un 
+    disparo al alien decremente la energia del mismo.      
+"""
+
+
+"""
+    Ejercicio 5:
+        Modelar la clase Mosquito para que el siguiente test se ejecute exitosamente:
+
+        def test_mosquitoRecibioDisparo(self):
+            robot  = Robot()
+            mosquito = Mosquito()
+            mosquito.inicializar()
+
+            self.assertFalse(mosquito.recibioDisparo())
+
+            robot.disparar(mosquito)
+
+            self.assertTrue(mosquito.recibioDisparo())
+            
+
+    Pasos sugeridos:
+        1. Identifique los mensajes que debe entender el objeto “mosquito”.
+        2. Implemente dichos mensajes y escriba los tests que prueben su correcto funcionamiento.
+        3. Implemente el test planteado originalmente y verifique que se ejecute correctamente.
+"""
