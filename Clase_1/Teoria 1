@@ -111,6 +111,9 @@ Propiedades:
 
     Veamos el ejemplo en el script calculadora.py
 
+    Los guiones bajo nos permiten darle un nivel de acceso a las propiedades, 
+    de igual manera funciona para los metodos de clase.
+
 
 ____________________________________________________________________________________________
 
