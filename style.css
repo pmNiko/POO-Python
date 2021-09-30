@@ -1,4 +1,50 @@
+body {
+  background-color: rgba(12, 91, 238, 0.3) !important ;
+}
+
 nav.navbar.navbar-expand {
   flex-wrap: nowrap !important;
   justify-content: center !important;
+}
+
+a.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  color: white !important;
+}
+
+img {
+  width: 100px !important;
+  height: 30px !important;
+}
+
+.info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.accordion-button {
+  font-size: 16px;
+}
+
+.accordion-body {
+  font-size: 12px;
+}
+
+.contenedor1 {
+  margin-right: 10px;
+  width: 40%;
+}
+.contenedor2 {
+  margin-left: 10px;
+  width: 40%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 3%;
+  background-color: cornflowerblue;
 }
