@@ -1,4 +1,4 @@
-from Clase_2.animal.animal import Animal
+from Clase_2.animal import Animal
 
 
 class Gato(Animal):

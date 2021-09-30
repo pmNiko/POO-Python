@@ -1,5 +1,5 @@
 import unittest
-from gato.gato import Gato
+from gato import Gato
 
 
 class TestGato(unittest.TestCase):
