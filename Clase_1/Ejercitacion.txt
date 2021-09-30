@@ -10,24 +10,23 @@
         >>> niko@desktop:~/Python/POO-Python$  tree
 
             .
-            ├── Clase_1
-            │   ├── calculadora.py
-            │   ├── contador.py
-            │   ├── Ejercitacion.txt
-            │   ├── overloading
-            │   │   ├── overloading.png
-            │   │   └── Teoria.txt
-            │   ├── Teoria 1
-            │   └── usuario.py
-            ├── nicolas_paneblanco
-            │   ├── fecha.py
-            │   └── fecha_test.py
-            ├── README.md
-            └── __test__
-                ├── calculadora_test.py
-                ├── contador_test.py
-                ├── Testing
-                └── usuario_test.py
+            |-- Clase_1                     # <=== Paquete Clase_1
+            |   |-- Ejercitacion.txt
+            |   |-- Teoria\ 1
+            |   |-- __init__.py    # Clase_1 tiene un script __init__.py para poder ser accedido
+            |   |-- __test__                # <=== Paquete __test__
+            |   |   |-- Testing
+            |   |   |-- __init__.py         # __test__ tiene un script __init__.py para poder ser accedido
+            |   |   |-- calculadora_test.py
+            |   |   |-- contador_test.py
+            |   |   `-- usuario_test.py
+            |   |-- calculadora.py
+            |   |-- contador.py
+            |   |-- overloading
+            |   |   |-- Teoria.txt
+            |   |   `-- overloading.png
+            |   `-- usuario.py
+            `-- README.md
 
     Nota: para correr los test siguiendo la estructura antes especificada 
     debe hacer uso del shortcut: ctrl + shift + P 
