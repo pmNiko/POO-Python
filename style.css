@@ -1,0 +1,4 @@
+nav.navbar.navbar-expand {
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+}
