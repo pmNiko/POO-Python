@@ -3,7 +3,6 @@ body {
 }
 
 nav.navbar.navbar-expand {
-  flex-wrap: nowrap !important;
   justify-content: center !important;
 }
 
@@ -13,15 +12,8 @@ a.navbar-brand {
 }
 
 img {
-  width: 100px !important;
+  width: 130px !important;
   height: 30px !important;
-}
-
-.info {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .accordion-button {
@@ -29,17 +21,11 @@ img {
 }
 
 .accordion-body {
+  margin-top: 10px !important;
   font-size: 12px;
-}
+} 
 
-.contenedor1 {
-  margin-right: 10px;
-  width: 40%;
-}
-.contenedor2 {
-  margin-left: 10px;
-  width: 40%;
-}
+
 
 footer {
   position: fixed;
