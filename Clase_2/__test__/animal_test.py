@@ -9,3 +9,7 @@ class TestAnimal(unittest.TestCase):
 
         self.assertEqual(
             gato.datos(), 'Soy gato tengo 4 patas y hago miau.')
+
+
+if __name__ == '__main__':
+    unittest.main()

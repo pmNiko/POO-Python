@@ -1,0 +1,106 @@
+
+   """ Herencia """
+
+Habiamos visto
+/*******
+2 pilares de la POO 
+  -> Encapsulación: esta propiedad asegura que el estado interno de un objeto solo puede ser
+     modificado por si mismo mediante metodos predefinidos. De esta manera el objeto expondra 
+     hacia el exterior solo la información necesaria que desea comunicar. 
+      Pensemos en un auto, este le comunica al resto que va realizar un giro, pero no expone 
+     sus componentes internos, de esta manera solo provee la información necesaria para poder
+     comunicarse con el resto. 
+  
+  -> Abstracción este principio hace referencia a que la clase debe representar las características
+     de la entidad hacia el mundo exterior, pero ocultando la complejidad que lleva aparejada. Es 
+     decir abstrae la complejidad, brindando una serie de atributos y metodos que podemos utilizar 
+     sin preocuparnos por su implementación, este principio viene de la mano al principio de 
+     Encapsulación.
+*******/
+
+Vamos a ver los otros dos pilares de la POO
+
+  -> Herencia: esta es una de las caracteristicas mas potentes de este paradigma ya que permite 
+     realizar relaciones jerarquicas entre clases, de forma que atributos y metodos seran heredados
+     por las subclases, esto fomenta la reutilización de codigo.
+     Asi podemos ver que la clase Animal tiene su estado y comportamiento, entonces podemos crear una 
+     subclase Perro la cual heredará atributos y metodos de la clase Animal.
+
+Veamos la clase Animal y como puede heredar la clase Gato
+
+____________________________________________________________________________________________________
+
+   Qué es una clase abstracta
+
+      Las clases abstractas, como su nombre lo indica, son algo abstracto, 
+      no representan algo específico y las podemos usar para crear otras clases. 
+      No pueden ser instanciadas, por lo que no podemos crear nuevos objetos con ellas.
+      Solamente se pueden usar para construir subclases. 
+      Permitiendo así tener una única implementación de los métodos compartidos, evitando la duplicación de código.
+
+      Resumiendo, las clases abstractas define una interfaz común para las subclases. 
+      Proporciona atributos y métodos comunes para todas las subclases evitando así la necesidad de duplicar código. 
+      Imponiendo además lo métodos que deber ser implementados para evitar inconsistencias entre las subclases.
+
+   Creación de clases abstractas en Python
+
+      Para poder crear clases abstractas en Python es necesario importar la clase ABC y el decorador abstractmethod 
+      del modulo abc (Abstract Base Classes). Un módulo que se encuentra en la librería estándar del lenguaje, 
+      por lo que no es necesario instalar. 
+      Así para definir una clase privada solamente se tiene que crear una clase heredada de ABC con un método abstracto.
+
+   from abc import ABC, abstractmethod
+
+      class Animal(ABC):
+         @abstractmethod
+         def mover(self):
+            pass
+
+   
+   Ahora si se intenta crear una instancia de la clase animal, 
+   Python no lo permitirá indicando que no es posible. 
+   Es importante notar que que si la clase no hereda de ABC o contiene por lo menos un método abstracto, 
+   Python permitirá instancias las clases.
+
+
+   Por otro lado, desde los métodos de las subclases podemos llamar a las implementaciones de la clase abstracta 
+   con el comando super() seguido del nombre del método.
+
+      class Animal(ABC):
+         @abstractmethod
+         def mover(self):
+            pass
+         
+         @abstractmethod
+         def comer(self):
+            print('Animal come')
+
+        
+      class Gato(Animal):
+         def mover(self):
+            print('Mover gato')
+            
+            
+         def comer(self):
+            super().comer()
+            print('Gato come')
+            
+
+      g = Gato()
+      g.mover()
+      g.comer()
+
+Conclusiones
+   En esta entrada se ha visto cómo se pueden usar el patrón de clase abstracta en Python. 
+   Un patrón que es clave en programación orientada a objetos para evitar la repetición de código, 
+   centralizando las funcionalidades comunes en una clase que sirve de plantilla para las clases hijas.
+
+
+____________________________________________________________________________________________________
+
+Veamos la implementación de numero.py para el cual vamos a definir el mismo protocolo que realizamos en 
+la clase Numero: 
+   - (==, <, <=, >=, >)
+   - esta entre "un_numero" y "otro_numero"
+
+
