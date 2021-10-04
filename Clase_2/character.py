@@ -12,5 +12,6 @@ class Character(MagnitudLineal):
     def __eq__(self, character):
         return self.character == character
     
+    # Metodo definido por la subclase
     def __lt__(self, character):
         return self.character < character
