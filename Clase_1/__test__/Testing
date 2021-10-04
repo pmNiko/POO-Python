@@ -54,4 +54,4 @@ Nota:
                 self.assertTrue(hasattr(self.cuenta, 'saldo'))
 
 
-    De esta manera poemos reutilizar nustras intancias y reducir codigo.
+    De esta manera podemos reutilizar nustras intancias y reducir codigo.
