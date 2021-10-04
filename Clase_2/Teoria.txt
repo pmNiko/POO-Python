@@ -97,6 +97,9 @@ Conclusiones
 
 
 ____________________________________________________________________________________________________
+Vemaos la implementacion de la clase mi_fecha
+   
+
 
 Veamos la implementación de numero.py para el cual vamos a definir el mismo protocolo que realizamos en 
 la clase Numero: 
