@@ -110,16 +110,17 @@ ________________________________________________________________________________
    maneras distintas. 
 
      Ejercicio:
+      Clases:
+         Suma
+         Reata
+         Multiplicacion
+         Division
 
-      Veamos el escenario en que vamos a analizar el desplazameinto de los
-      vehiculos, teneindo como premisa que estos se encuentran estacionados, 
-      podriamos asumir que su desplazameinto es 0. Pero podemos enviarles el 
-      mensaje avanzar esto hara que el vehiculo se mueva y lo registraremos 
-      incrementando su desplazameinto. 
-         Tenemos las siguientes directivas:
-         -> Auto:   desplazameinto 50km
-         -> Camion: desplazameinto 30km
-         -> Moto:   desplazameinto 10km
+      Clase Abstracta OperacionMatematica
+        metodo abstracto:
+            👉🏻 operar()
+         
+      Script operaciones_matematica.py
 
 ____________________________________________________________________________________________________
 Vemaos la implementacion de la clase mi_fecha
