@@ -52,14 +52,14 @@ class TestNumero(unittest.TestCase):
         """ El numero 3 esta entre el 1 y el 5 """
         numero_3 = Numero(3)
         
-        self.assertTrue(numero_3.entreDosNumeros(self.numero_1, self.numero_5))
+        self.assertTrue(numero_3.entre(self.numero_1, self.numero_5))
         
         
     def test_unNumeroFueraDeRango(self):
         """ El numero 6 esta fuera del rango de 1 y 5"""
         numero_6 = Numero(6)
         
-        self.assertFalse(numero_6.entreDosNumeros(self.numero_1, self.numero_5))
+        self.assertFalse(numero_6.entre(self.numero_1, self.numero_5))
         
 
 if __name__ == '__main__':

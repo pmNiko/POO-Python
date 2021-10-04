@@ -1,6 +1,7 @@
 """ Definición de la Clase MiFecha """
+from magnitud_lineal import MagnitudLineal
 
-class MiFecha(object):
+class MiFecha(MagnitudLineal):
     def __init__(self, un_dia, un_mes, un_anio) -> None:
         self.__dia = un_dia
         self.__mes = un_mes
@@ -39,28 +40,28 @@ class MiFecha(object):
                 )
         
     # Overloading del operador "<="
-    def __le__(self, una_fecha):
-        return ( 
-                    (   self <  una_fecha ) 
-                    or 
-                    ( 
-                        self == una_fecha
-                    ) 
-                )
+    # def __le__(self, una_fecha):
+    #     return ( 
+    #                 (   self <  una_fecha ) 
+    #                 or 
+    #                 ( 
+    #                     self == una_fecha
+    #                 ) 
+    #             )
         
     # Overloading del operador ">="
-    def __ge__(self, una_fecha):
-        return not self <  una_fecha 
+    # def __ge__(self, una_fecha):
+    #     return not self <  una_fecha 
     
     # Overloading del operador ">"
-    def __gt__(self, una_fecha):
-        return not  self <=  una_fecha 
+    # def __gt__(self, una_fecha):
+    #     return not  self <=  una_fecha 
     
-    # Funcion de comparacion entre 
-    def entreDosFechas(self, fecha_inicio, fecha_fin):
-        """ Devuelve unbooleano si se encuentra entre las
+    # def entreDosFechas(self, fecha_inicio, fecha_fin):
+        """ Devuelve un booleano si se encuentra entre las
             dos fechas que recibe como parametro."""
-        return fecha_inicio <= self and fecha_fin >= self
+        # return super().entre(fecha_inicio, fecha_fin)
+        # return fecha_inicio <= self and fecha_fin >= self
         
 
 if __name__ == "__main__":

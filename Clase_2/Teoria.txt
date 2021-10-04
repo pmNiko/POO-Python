@@ -98,12 +98,70 @@ Conclusiones
 
 ____________________________________________________________________________________________________
 Vemaos la implementacion de la clase mi_fecha
-   
+   la clase MiFecha:
+      - (==, <, <=, >=, >)
+      - esta entre "una_fecha" y "otra_fecha"
 
 
 Veamos la implementación de numero.py para el cual vamos a definir el mismo protocolo que realizamos en 
-la clase Numero: 
-   - (==, <, <=, >=, >)
-   - esta entre "un_numero" y "otro_numero"
+   La clase Numero: 
+      - (==, <, <=, >=, >)
+      - esta entre "un_numero" y "otro_numero"
+
+Magnitudes lineales
+   👉🏻 Cualquier magnitud que se pueda comparar linealmente puede utilizar la misma implementacion. 
+   👉🏻 Solo necesita definir dos conceptos:
+      -> igualdad
+      -> ser menor a otra magnitud de mi clase
+
+Pongamos en práctica.
+Modelemos la clase MagnitudLineal 
+
+   Protocolo:
+      👉🏻 <= otra_magnitud   # metodo concreto
+      👉🏻 > otra_magnitud    # metodo concreto
+      👉🏻 >= otra_magnitud   # metodo concreto
+      👉🏻 entre(una_magnitud, otra_magnitud)   # metodo concreto
+
+
+      👉🏻 == otra_magnitud    # metodo abstracto
+      👉🏻 <  otra_magnitud    # metodo abstracto
+
+Por ultimo en MiFecha comentemos los metodos: "__le__" - "__ge__" - "__ge__" - "entreDosFechas"
+Podemos ver que al correr los test nos acusan error porque no encuentra 
+los metodos.
+
+Ahora importemos la clase MagnitudLineal y hagamos que MiFecha herede de ella.
+Al correr los test 🧪 estos pasan correctamente.
+Excepto los del mensaje entreDosFechas puesto que no encuentra esa definición de mensaje.
+podemos hacer dos cosas:
+   -> Envolver el mensaje de la superclase 
+         ejemplo: 
+                def entreDosFechas(self, fecha_inicio, fecha_fin):
+                     """ Devuelve un booleano si se encuentra entre las
+                           dos fechas que recibe como parametro."""
+                     return super().entre(fecha_inicio, fecha_fin)
+
+   -> Cambiar los nombres en el setup de test 
+
+Realicemos el mismo procedimiento con Numero. 
+corran los test.
+
+Si ahora modelaramos la clase Character sabiendo que cada caracter tiene un valor numerico ASCII
+   Fuente: https://elcodigoascii.com.ar/
+
+   En python contamos con dos funciones o metodos 
+      -> ord('a')   # devuelve el valor ASCII
+      >>> 97 
+
+      -> chr(97)    # devuelve el caracter correspondiente
+      >>> 'a'
+
+Modelemos ahora Character haciendolo extender de MagnitudLineal y definamos los dos metodos
+abstractos: 
+   "__eq__"    y    "__lt__"
+
+Realicen los test que validen su comportamiento.
+ 
 
 
