@@ -1,0 +1,29 @@
+
+   """ Herencia """
+
+Habiamos visto
+/*******
+2 pilares de la POO 
+  -> Encapsulación: esta propiedad asegura que el estado interno de un objeto solo puede ser
+     modificado por si mismo mediante metodos predefinidos. De esta manera el objeto expondra 
+     hacia el exterior solo la información necesaria que desea comunicar. 
+      Pensemos en un auto, este le comunica al resto que va realizar un giro, pero no expone 
+     sus componentes internos, de esta manera solo provee la información necesaria para poder
+     comunicarse con el resto. 
+  
+  -> Abstracción este principio hace referencia a que la clase debe representar las características
+     de la entidad hacia el mundo exterior, pero ocultando la complejidad que lleva aparejada. Es 
+     decir abstrae la complejidad, brindando una serie de atributos y metodos que podemos utilizar 
+     sin preocuparnos por su implementación, este principio viene de la mano al principio de 
+     Encapsulación.
+*******/
+
+Vamos a ver los otros dos pilares de la POO
+
+  -> Herencia: esta es una de las caracteristicas mas potentes de este paradigma ya que permite 
+     realizar relaciones jerarquicas entre clases, de forma que atributos y metodos seran heredados
+     por las subclases, esto fomenta la reutilización de codigo.
+     Asi podemos ver que la clase Animal tiene su estado y comportamiento, entonces podemos crear una 
+     subclase Perro la cual heredará atributos y metodos de la clase Animal.
+
+ 
