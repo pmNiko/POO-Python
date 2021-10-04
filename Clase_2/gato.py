@@ -1,9 +1,10 @@
-from Clase_2.animal import Animal
+from animal import Animal
 
 
 class Gato(Animal):
     pass
 
 
-gato = Gato("gato", 4, "miau")
-print(gato.datos())
+if __name__ == '__main__':
+    gato = Gato("gato", 4, "miau")
+    print(gato.datos())
