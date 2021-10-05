@@ -122,7 +122,16 @@ ________________________________________________________________________________
          
       Script operaciones_matematica.py
 
+   Como podemos ver las cuatro clases implementan el metodo operar() aunque sus implementaciones
+   sean distintas.
+
 ____________________________________________________________________________________________________
+Magnitudes lineales
+   👉🏻 Cualquier magnitud que se pueda comparar linealmente puede utilizar la misma implementacion. 
+   👉🏻 Solo necesita definir dos conceptos:
+      -> igualdad
+      -> ser menor a otra magnitud de mi clase
+      
 Vemaos la implementacion de la clase mi_fecha
    la clase MiFecha:
       - (==, <, <=, >=, >)
@@ -134,11 +143,7 @@ Veamos la implementación de numero.py para el cual vamos a definir el mismo pro
       - (==, <, <=, >=, >)
       - esta entre "un_numero" y "otro_numero"
 
-Magnitudes lineales
-   👉🏻 Cualquier magnitud que se pueda comparar linealmente puede utilizar la misma implementacion. 
-   👉🏻 Solo necesita definir dos conceptos:
-      -> igualdad
-      -> ser menor a otra magnitud de mi clase
+
 
 Pongamos en práctica.
 Modelemos la clase MagnitudLineal 
