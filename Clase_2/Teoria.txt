@@ -94,7 +94,7 @@ ________________________________________________________________________________
 Conclusiones
    En esta entrada se ha visto cómo se pueden usar el patrón de clase abstracta en Python. 
    Un patrón que es clave en programación orientada a objetos para evitar la repetición de código, 
-   centralizando las funcionalidades comunes en una clase que sirve de plantilla para las clases hijas.
+   centralizando las funcionalidades comunes en una clase que sirve de base para las clases hijas.
 
 
 ____________________________________________________________________________________________________
