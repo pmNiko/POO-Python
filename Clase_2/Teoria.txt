@@ -112,7 +112,7 @@ ________________________________________________________________________________
      Ejercicio:
       Clases:
          Suma
-         Reata
+         Resta
          Multiplicacion
          Division
 

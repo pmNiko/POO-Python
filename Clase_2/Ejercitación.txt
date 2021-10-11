@@ -1,0 +1,107 @@
+########  --- Práctica --- ########
+
+"""
+    Ejercicio 1:
+        Estación de servicio
+
+        Surtidor: 
+            ✅ Poseen una carga inicialmente en 0
+            ✅ Posee una capacidad maxima al instanciarse
+            ✅ Sabe si esta vacío 
+            ✅ Sabe cuanto lugar libre tiene para cargar
+            ✅ Puede recibir una carga
+
+        Estacion:
+            ✅ Tienen un conjunto de surtidores
+            ✅ Al instanciarse no tendrá surtidores
+            ✅ Podrá agregar un surtidor
+            ✅ Saber cuantos surtidores tiene
+            ✅ Saber cuantos surtidores vacios tiene 
+            ✅ Saber cuáles son su surtidores vacios
+            ✅ Sumar total de litros que faltan para 
+                completar su capacidad total
+            ✅ Obtener el costo total para completar 
+                la carga faltante dado un precio por litro
+"""
+
+"""
+    Ejercicio 2:
+
+        Implementar la clase Porcentaje tal que respete el siguiente protocolo:
+        👉🏻 valor(unNumero). Indica el valor porcentual que va a representar el objeto.
+        👉🏻 aplicarA(unNumero). Retorna el resultado de aplicar el porcentaje a un numero.
+
+        Defina los tests de unidad que considere necesarios para esta clase.
+"""
+
+"""
+    Ejercicio 3:
+
+        Implemente la clase Punto: 
+            que represente un punto en el plano de coordenadas (x,y). 
+        Las instancias de dicha clase deben responder al mensaje:
+        👉🏻 distanciaA(otroPunto). Que retorna la distancia entre dos puntos
+                usando el teorema de Pitágoras.
+        👉🏻 si es igual a otro punto.
+
+        Pista:
+            🛠 El metodo abs(un_numero) devuelve el valor absoluto de un numero
+            ej: 
+                abs(2)    >>> 2
+                abs(-2)   >>> 2
+
+            🛠 El metodo math.pow(un_numero, 2) eleva un numero al cuadrado
+            🛠 El metodo math.sqrt(un_numero) devuelve la raiz cuadrada
+             👉🏻 Para hacer uso de estos se debe importar el modulo math incluido en Python
+                
+            ej:
+                import math
+
+                math.pow(3, 2) >>> 9
+                math.sqrt(9)   >>> 3
+            
+        Defina los tests de unidad que considere necesarios para esta clase.
+        Importante: para los assertEqual() de los test no olvide redondear 
+        con el metodo round(un_numero, 2) para indicarle cuantos decimales tomar 
+        en cuenta.
+
+        Algunos test:
+            🧪 Dos puntos con las mismas coordenadas
+            🧪 Dos puntos con las mismas coordenadas en X
+            🧪 Dos puntos con las mismas coordenadas en Y
+"""
+
+"""
+    Ejercicio 3:
+        La empresa para la que usted trabaja planea desarrollar un software para la visualización de figuras geométricas. Para esto se le pide que:
+        a) Modele el concepto de una círculo en términos de su centro y su radio.
+        b) Pueda saber si un punto se encuentra dentro de un círculo.
+        c) Pueda saber si dos circulos son iguales en torno a su radio.
+        d) Pueda saber si un circulo contiene otro circulo.
+        e) Pueda saber si dos circulos estan superpuestos.
+        f) Pueda saber si dos círculos se intersecan o no.
+        g) Generar una excepción en el caso de que el radio pasado como parametro 
+            sea menor a 1. ValueError('Radio no valido!.')
+
+        Implemente las clases necesarias y sus tests.
+        Puede reutilizar la clase Punto.
+"""
+
+"""
+    Ejercicio 4:
+        Para un sistema de cátedras en una facultad se requiere llevar un registro estudiantes y las notas de los parciales que han rendido. De cada estudiante se sabe su nombre y apellido.
+        Implemente las clases necesarias y sus correspondientes tests para poder contestar a las siguientes preguntas:
+        a) Saber si un estudiante aprobó la cursada (la cursada se considera aprobada si todas sus notas son
+        mayores o iguales a 4).
+        b) Saber si un estudiante promocionó la cursada (la cursada se considera aprobada si todas sus notas
+        son mayores o iguales a 7).
+        c) Saber la cantidad de notas menores a 4 que sacó un estudiante.
+"""
+
+"""
+    Ejercicio 4:
+        Modifique el ejercicio 2 para que:
+            a) Sea obligatorio pasar el valor al crear una nueva instancia de la clase Porcentaje.
+            b) No sea posible modificar el valor del porcentaje una vez creado el objeto.
+            c) Modifique los tests de unidad en forma acorde.
+"""
