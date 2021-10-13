@@ -1,0 +1,87 @@
+
+  Podemos ver una clase se define en tres partes: 
+
+    -> Nombre de la clase: comienza con mayuscula "Contador(object)"
+    -> Variables de instancias: en minusculas con un valor por defecto "valor = 0"
+    -> Protocolo: se debe especificar por cada mensaje el nombre del 
+        metodo y sus parametros (optativo) "incrementar()"
+
+
+
+___________________________________________________________________________________________
+
+Propiedades: 
+
+    Existen tres categorias de propiedades:
+      - public: pueden ser accedidas por cualquiera
+      - protected: son accedidas por la clase que la define o su decendencia
+      - private: son accedidas solo por la clase que la define
+
+    En el caso de no tener de manera publica las propiedades accederemos a ellas mediante 
+    el uso de Guetters y Setters
+    De esta manera Python utiliza el decorador @property para definir el acceso a dichas propiedades.
+
+    Por ejemplo en el caso de tener una propiedad privada __valor tendriamos el siguiente escenario:
+
+      class Contador():
+          __valor = 0 
+
+          @property 
+          def valor(self): return self.__valor
+
+          @valor.setter
+          def valor(self, un_valor): self.__valor = un_valor
+
+    Para utilizarlo:
+
+      contador = Contador()
+
+      print(contador.valor)    >>> 0
+
+      contador.valor = 5
+
+      print(contador.valor)   >>> 5
+
+    
+    Por el contrario si intentamos:
+
+      contador.__valor = 9
+
+      Veremos que la propiedad no fue accedida.
+
+
+    Veamos el ejemplo en el script calculadora.py
+
+    Los guiones bajo nos permiten darle un nivel de acceso a las propiedades, 
+    de igual manera funciona para los metodos de clase.
+
+
+____________________________________________________________________________________________
+
+Constructores:
+
+    Existe un tiempo entre:
+      • La creación de un objeto.
+      • La adquisición de los colaboradores que ese objeto necesita
+        para llevar adelante sus responsabilidades.
+      • Mientras tanto, el objeto está en un estado
+        “inconsistente”.
+      • ¿Cómo impedimos que esto suceda?
+      • Inicializar al objeto con valores por defecto.
+      • No permitir la creación de un objeto a menos que nos
+        pasen la información mínima indispensable.
+
+
+    Constructores:
+      • Son mensajes de clase relacionados a la construcción
+        de objetos bien formados.
+      • Podemos crear constructores que tomen como
+        parámetros los colaboradores básicos del nuevo
+        objeto
+      • Así, creamos objetos bien formados.
+      • Un objeto bien formado se encuentra en estado consistente
+        desde su creación.
+
+
+    En Python podemos hacer uso del mismo a traves del metodo __init__
+    Para entenderlo mejor veamos el script usuario.py
