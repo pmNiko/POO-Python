@@ -23,6 +23,15 @@ Que es la programación orientada a objetos?
   📚  Para enviar un mensaje a un objeto tengo que poder nombrarlo.
 
 
+🎗 Abstracción:
+    👉🏻 Es el proceso de supresion de detalles respecto de un fenomeno,
+        entidad o concepto.
+    👉🏻 El objetivo es concentrarse en los aspectos mas significativos.
+    👉🏻 De esta manera, logramos identificar conceptos generales
+      ( persona - auto - pelota - etc) que pueden ser traducidos a 
+      construcciones básicas (objetos) en nuestro paradigma.
+    ✅ Luego podemos concentrarnos en resolver la problematica.
+
 
 📚 Un objeto en POO es la representación de una entidad de la vida real.
     Cada objeto tiene:
@@ -66,15 +75,9 @@ Que es la programación orientada a objetos?
 
 
 
-🎗 Abstracción:
-    👉🏻 Es el proceso de supresion de detalles respecto de un fenomeno,
-        entidad o concepto.
-    👉🏻 El objetivo es concentrarse en los aspectos mas significativos.
-    👉🏻 De esta manera, logramos identificar conceptos generales
-      ( persona - auto - pelota - etc) que pueden ser traducidos a 
-      construcciones básicas (objetos) en nuestro paradigma.
-    ✅ Luego podemos concentrarnos en resolver la problematica.
+  
 
+___________________________________________________________________________________________
 
 🎗 Encapsulación: 
     👉🏻 Los metodos y el estado interno del objeto quedan escondidos
