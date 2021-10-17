@@ -123,7 +123,8 @@ En Python las clases se definen a través de la palabra reservada "class"
 seguido del nombre de la clase seguidamente se indentan estado y 
 comportamiento de la misma. 
 
-En Python se utiliza "self" para hacer referencia asi mismo.
+En Python se utiliza "self" para referirse asi mismo, de esta manera 
+puede auto enviarse mensajes.
 
 Veamos un ejemplo en el script contador.py
 

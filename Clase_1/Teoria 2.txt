@@ -1,9 +1,9 @@
 
-  Podemos ver una clase se define en tres partes: 
+  Podemos ver que una clase se define en tres partes: 
 
-    -> Nombre de la clase: comienza con mayuscula "Contador(object)"
-    -> Variables de instancias: en minusculas con un valor por defecto "valor = 0"
-    -> Protocolo: se debe especificar por cada mensaje el nombre del 
+    👉🏻 Nombre de la clase: comienza con mayuscula "Contador(object)"
+    👉🏻 Variables de instancias: en minusculas con un valor por defecto "valor = 0"
+    👉🏻 Protocolo: se debe especificar por cada mensaje el nombre del 
         metodo y sus parametros (optativo) "incrementar()"
 
 
@@ -13,12 +13,11 @@ ________________________________________________________________________________
 Propiedades: 
 
     Existen tres categorias de propiedades:
-      - public: pueden ser accedidas por cualquiera
-      - protected: son accedidas por la clase que la define o su decendencia
-      - private: son accedidas solo por la clase que la define
+      ✅  public: pueden ser accedidas por cualquiera
+      🔐  protected: son accedidas por la clase que la define o su decendencia
+      ⛔️  private: son accedidas solo por la clase que la define
 
-    En el caso de no tener de manera publica las propiedades accederemos a ellas mediante 
-    el uso de Guetters y Setters
+    A las propiedades accederemos a ellas mediante el uso de Guetters y Setters
     De esta manera Python utiliza el decorador @property para definir el acceso a dichas propiedades.
 
     Por ejemplo en el caso de tener una propiedad privada __valor tendriamos el siguiente escenario:
@@ -53,7 +52,7 @@ Propiedades:
     Veamos el ejemplo en el script calculadora.py
 
     Los guiones bajo nos permiten darle un nivel de acceso a las propiedades, 
-    de igual manera funciona para los metodos de clase.
+    de igual manera funciona para los metodos.
 
 
 ____________________________________________________________________________________________
