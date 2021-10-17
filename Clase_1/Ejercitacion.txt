@@ -48,6 +48,7 @@ ______________________________________________________
         
         y debera poder:
             - depositar un monto
+            - puedeExtraer un monto
             - extraer un monto
             - en el caso de querer extraer un monto superior 
               al monto disponiple arrojara una 
@@ -122,4 +123,19 @@ ______________________________________________________
         1. Identifique los mensajes que debe entender el objeto “mosquito”.
         2. Implemente dichos mensajes y escriba los tests que prueben su correcto funcionamiento.
         3. Implemente el test planteado originalmente y verifique que se ejecute correctamente.
+"""
+
+"""
+    Ejercicio 6: 
+        Modelar la clase Banco:
+            - Un banco puede transferir un monto de una cuenta a otra cuenta.
+"""
+
+"""
+    Ejercicio 7:
+        Extender la clase CajaDeAhorro para que:
+            - Su saldo nunca pueda ser menor a 0, al querer realizar dicha extracción 
+              propagar la excepción ValueError("Monto no disponible").
+            - Tenga una cantidad de extracciones fijas. 
+            - Pueda restaurar la cantidad de extracciones. 
 """

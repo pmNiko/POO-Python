@@ -1,0 +1,131 @@
+
+    """ Que es un paradigma? """
+
+🛠 Paradigma: modelo de diseño y desarrollo de programas.
+
+📝 Paradigmas: 
+    -> secuenciales  ---- COBOL
+    -> procedurales  ---- C
+    -> funcionales   ---- Scala - Javascript
+    -> objeto        ---- Smalltalk - Python - Java 
+    https://docs.python.org/3/
+
+
+
+    """ Paradigma POO """
+
+Que es la programación orientada a objetos?
+
+  El paradigma orientado a objetos busca dejar de centrarse en la logica
+  para empezar a pensar en los objetos y como interaccionan entre si.
+  📚  Los sistemas estan compuestos por un conjunto de objetos.
+  📚  Los objetos se comunican enviandose mensajes.
+  📚  Para enviar un mensaje a un objeto tengo que poder nombrarlo.
+
+
+🎗 Abstracción:
+    👉🏻 Es el proceso de supresion de detalles respecto de un fenomeno,
+        entidad o concepto.
+    👉🏻 El objetivo es concentrarse en los aspectos mas significativos.
+    👉🏻 De esta manera, logramos identificar conceptos generales
+      ( persona - auto - pelota - etc) que pueden ser traducidos a 
+      construcciones básicas (objetos) en nuestro paradigma.
+    ✅ Luego podemos concentrarnos en resolver la problematica.
+
+
+📚 Un objeto en POO es la representación de una entidad de la vida real.
+    Cada objeto tiene:
+      👉🏻 un comportamiento
+      👉🏻 un estado
+      👉🏻 Y sólo es identico a si mismo
+
+
+  🛠 Comportamiento - ¿Que hace un objeto?
+
+  ✅ Un objeto se define en terminos de su comportamiento.
+  ✅ Indica que sabe hacer un objeto, la responsabilidad del mismo.
+  ✅ Protocolo de mensajes al cual sabe responder dicho objeto.
+
+
+  🛠 Comportamiento - ¿Como lo hace?
+
+  ✅ La implementación indica como hace el objeto para responder 
+     a sus mensajes.
+  ✅ Se especifica a través de un conjunto de métodos.
+  ✅ Es privado del objeto. Ningún otro objeto puede acceder a la implementación.
+
+
+      📚 ¿ Que es un metodo ?
+        ⚓️ Es la contraparte funcional del mensaje.
+        ⚓️ Expresa la forma de llevar a cabo la semántica 
+          propia de un mensaje particular (el cómo).
+      
+      📚 ¿ Que puede hacer un metodo ?
+        ⚓️ Modificar el estado interno del objeto.
+        ⚓️ Colaborar con otros objetos enviando mensajes.
+        ⚓️ Retornar y terminar.
+
+
+  🛠 Estado Interno
+
+  ✅ Esta compuesto por las variables de instancia del objeto.
+  ✅ Las variables de instancia hacen referencia a otros objetos 
+    colaboradores para llevar a cabo sus responsabilidades.
+  ✅ Es privado del objeto. Ningún otro objeto puede acceder a estas.
+
+
+
+  
+
+___________________________________________________________________________________________
+
+🎗 Encapsulación: 
+    👉🏻 Los metodos y el estado interno del objeto quedan escondidos
+        para cualquier otro objeto. Es el objeto quien decide que 
+        se publica.
+    👉🏻 Es la cuañidad de los objetos de ocultar los detalles de 
+       implementación y su estado interno al mundo exterior.
+    👉🏻 Motiva a un bajo acoplamiento entre objetos.
+    👉🏻 Permite que el software escale mejor frente a cambios.
+    👉🏻 Se desarrolla en terminos del protocolo.
+
+
+✅ Ventajas:
+    👉🏻 Mediante la modularización y abstracción podemos atacar 
+      la problemática de manera gradual.
+    👉🏻 Orden y legibilidad del código. 
+    👉🏻 Escalabilidad capacidad de adaptarse a cambios del sistema.
+
+
+
+📚 Comunicación entre objetos:
+    Los objetos se comunican a través de mensajes:
+      👉🏻 unarios           'MAYUSCULAS'.lower()
+      👉🏻 binarios          3 + 5  _____  4 <= 10
+      👉🏻 palabra clave     contador.sumar(10)
+
+
+
+📚 Clase: 
+    👉🏻 Una clase es la descripción abstracta 
+       de un conjunto de objetos similares. 
+    👉🏻 Las clases cumplen tres roles:
+        ✅ Agrupan el comportamiento común a sus instancias.
+        ✅ Definen la forma de sus instancias.
+        ✅ Crean objetos que son instancias de ellas.
+    👉🏻 En consecuencia todas las instancias de una clase se 
+       comportan de la misma manera.
+    👉🏻 Cada instancia mantendrá su propio estado interno.
+
+
+
+En Python las clases se definen a través de la palabra reservada "class" 
+seguido del nombre de la clase seguidamente se indentan estado y 
+comportamiento de la misma. 
+
+En Python se utiliza "self" para referirse asi mismo, de esta manera 
+puede auto enviarse mensajes.
+
+Veamos un ejemplo en el script contador.py
+
+___________________________________________________________________________________________

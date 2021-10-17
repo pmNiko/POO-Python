@@ -15,11 +15,13 @@ class Contador(object):
     def incrementar(self):
         """ Incrementa en 1 el valor del contador. """
         self.valor = self.valor + 1
+        # self.valor += 1
 
     def decrementar(self):
         """ Decrementa en 1 el valor del contador. """
         if self.valor > 0:
             self.valor = self.valor - 1
+            # self.valor -= 1
         else:
             raise ValueError('Imposible decrementar el contador.')
 
