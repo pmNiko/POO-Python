@@ -134,8 +134,6 @@ ______________________________________________________
 """
     Ejercicio 7:
         Extender la clase CajaDeAhorro para que:
-            - Su saldo nunca pueda ser menor a 0, al querer realizar dicha extracción 
-              propagar la excepción ValueError("Monto no disponible").
             - Tenga una cantidad de extracciones fijas. 
             - Pueda restaurar la cantidad de extracciones. 
 """
