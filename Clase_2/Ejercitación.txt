@@ -99,7 +99,7 @@
 """
 
 """
-    Ejercicio 4:
+    Ejercicio 5:
         Modifique el ejercicio 2 para que:
             a) Sea obligatorio pasar el valor al crear una nueva instancia de la clase Porcentaje.
             b) No sea posible modificar el valor del porcentaje una vez creado el objeto.
