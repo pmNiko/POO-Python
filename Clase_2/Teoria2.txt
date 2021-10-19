@@ -1,0 +1,36 @@
+
+    Definiendo Excepciones Personalizadas 
+
+
+Para crear Excepciones Personalizadas podemos hacer uso de 
+todo lo aprendido y basandonos en el comcepto de Herencia 
+crear una subclase de Exception
+
+Ejemplo:
+
+    class ImposibleRealizarExtraccion(Exception):
+        """ Excepción para definir que una extracción 
+        no puede realizarse """
+        def __init__(self, mensaje="", informacion=""):
+            self.mensaje = mensaje
+            self.informacion = informacion
+
+
+
+Aplicando la excepción en el metodo de la clase CajaDeAhorro
+
+    ----- ------------       ----------    --------------
+    def extraer(self, un_monto: float):
+        """ Extrae un monto de la cuenta, sino arroja la excepción: 
+            -> ImposibleRealizarExtraccion('Monto no disponible.')"""
+        if self.puedeExtraer(un_monto):
+            self.__saldo -= un_monto
+            self.__extraccionesRealizadas += 1
+        else:
+            raise ImposibleRealizarExtraccion('Monto no disponible.')
+    ---- --------------     ------------     -----------------
+
+Fuente: https://ellibrodepython.com/definir-excepcion
+
+
+Ahora ya pueden realizar sus propias Exception cuando sea necesario.
