@@ -174,6 +174,13 @@ abstractos:
    "__eq__"    y    "__lt__"
 
 Realicen los test que validen su comportamiento.
+
+Los metodos concretos de la clase Abstracta se resulven en base a los metodos concretos de las
+subclases.
+
+Testear los metodos concretos de las classes abstractas:
+   fuente: https://pythonin1minute.com/how-to-unit-test-abstract-base-classes-in-python/
+   fuente: https://www.it-swarm-es.com/es/python/python-prueba-de-una-clase-base-abstracta/941902587/
  
 
 

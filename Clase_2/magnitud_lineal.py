@@ -45,4 +45,4 @@ class MagnitudLineal(ABC):
     
     # Overloading del operador "<"
     @abstractmethod
-    def __lt__(self, una_magnitud): pass
+    def __lt__(self, una_magnitud): raise NotImplementedError
