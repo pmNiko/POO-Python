@@ -105,3 +105,35 @@
             b) No sea posible modificar el valor del porcentaje una vez creado el objeto.
             c) Modifique los tests de unidad en forma acorde.
 """
+
+"""
+    Ejercicio 6:
+        Modelar: Lapso de tiempo
+
+        Estado:
+            👉🏻 desde: unaFecha
+            👉🏻 hasta: unaFecha
+        
+        Protocolo:
+            ✅ incluyeUnaFecha
+            ✅ cantidadDeDias
+
+        📚 incluir un constructor 
+        📚 la cantidad de dias segun el mes:
+           1- Enero       -> 31
+           2- Febrero     -> 28
+           3- Marzo       -> 31
+           4- Abril       -> 30
+
+           5- Mayo        -> 31
+           6- Junio       -> 30
+           7- Julio       -> 31
+           8- Agosto      -> 31
+
+           9- Septiembre  -> 30
+          10- Octubre     -> 31
+          11- Noviembre   -> 30
+          12- Diciembre   -> 31
+
+       📚 Realizar los test que validen su comportamiento.
+"""
