@@ -34,3 +34,17 @@ Fuente: https://ellibrodepython.com/definir-excepcion
 
 
 Ahora ya pueden realizar sus propias Exception cuando sea necesario.
+
+_____________________________________________________________________
+
+Veamos el siguiente caso.
+
+    🎗 Cuentas Bancarias
+
+    Un banco tiene dos clases de cuentas bancarias:
+        🎫 Cajas de ahorro
+        🎫 Cuentas corrientes
+
+    👉🏻 Ambas cuentas permiten depositar dinero.
+    👉🏻 Las cuentas corrientes tienen la particularidad de poder
+       extraer un determinado monto en descubierto.
