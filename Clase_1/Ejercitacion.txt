@@ -51,7 +51,7 @@ ______________________________________________________
             - puedeExtraer un monto
             - extraer un monto
             - en el caso de querer extraer un monto superior 
-              al monto disponiple arrojara una 
+              al monto disponible arrojara una 
               excepcion ValueError("Imposible realizar extracción.")
 
         Realizar los test necesarios que validen 
@@ -136,4 +136,24 @@ ______________________________________________________
         Extender la clase CajaDeAhorro para que:
             - Tenga una cantidad de extracciones fijas. 
             - Pueda restaurar la cantidad de extracciones. 
+"""
+
+"""
+    Ejercicio 8:
+        Modelar la clase CuentaCorriente:
+            - un titular
+            - un saldo
+            - descubierto naximo
+        
+        y debera poder:
+            - depositar un monto
+            - puedeExtraer un monto
+                👉🏻 un monto <= ( saldo + descubierto maximo )
+            - extraer un monto
+            - en el caso de querer extraer un monto superior 
+              al monto disponible arrojara una 
+              excepcion ValueError("Imposible realizar extracción.")
+
+        Realizar los test necesarios que validen 
+        el comportamiento.  
 """
