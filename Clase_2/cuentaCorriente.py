@@ -1,30 +1,27 @@
-""" Definición de la clase CajaDeAhorro """
+""" Definición de la clase CuentaCorriente """
 # from cuenta_bancaria import CuentaBancaria
 from excepciones import ImposibleRealizarExtraccion
 
-class CajaDeAhorro(object):
-    """ Clase CajaDeAhorro
+class CuentaCorriente(object):
+    """ Clase CuentaCorriente
 
         Atributos:
             titular: Nombre del titular de la cuenta.
             saldo: Saldo con el que se crea la caja de ahorro.
-            extracciones: cantidad de extracciones mensuales permitidas.
+            descuebiertoMaximo: representa el monto maximo en descubierto de la cuenta.
             
         Metodos:
             depositar: permite depositar unmonto en la cuenta.
             puedeExtraer: responde si es posible retirar un monto.
             extraer: extrae un monto de la cuenta, si no es posible arroja una excepción.
-            reastaurarEtracciones: restaura la cantidad de extracciones mensuales.
     """
-    def __init__(self, titular: str, saldo: float, extracciones_posibles: int) -> None:
+    def __init__(self, titular: str, saldo: float, descubiertoMaximo: float) -> None:
         self.__titular = titular
         self.__saldo = saldo
-        self.__extraccionesPosibles = extracciones_posibles
-        self.__extraccionesRealizadas = 0
-    # def __init__(self, titular: str, saldo: float, extracciones_posibles: int) -> None:
+        self.__descubiertoMaximo = descubiertoMaximo
+    # def __init__(self, titular: str, saldo: float, descubiertoMaximo: float) -> None:
     #     CuentaBancaria.__init__(self, titular, saldo)
-    #     self.__extraccionesPosibles = extracciones_posibles
-    #     self.__extraccionesRealizadas = 0
+    #     self.__descubiertoMaximo = descubiertoMaximo
 
     @property
     def titular(self): return self.__titular
@@ -33,20 +30,15 @@ class CajaDeAhorro(object):
     def saldo(self): return self.__saldo
     
     @property
-    def extraccionesPosibles(self): return self.__extraccionesPosibles
-    @property
-    def extraccionesRealizadas(self): return self.__extraccionesRealizadas
+    def descubiertoMaximo(self): return self.__descubiertoMaximo
 
     # -------- Metodos de la clase -------- #
     def depositar(self, un_monto: float) -> None: self.__saldo += un_monto
     
     def puedeExtraer(self, un_monto: int) -> bool:
         """ Devuelve true si se puede realizar la extracción """
-        return (
-            un_monto <= self.saldo 
-            and 
-            self.extraccionesRealizadas < self.extraccionesPosibles
-            )
+        return un_monto <= self.saldo + self.descubiertoMaximo  
+            
 
     def extraer(self, un_monto: float):
         """ Extrae un monto de la cuenta, sino arroja la excepción: 
@@ -54,22 +46,9 @@ class CajaDeAhorro(object):
         if self.puedeExtraer(un_monto):
             self.__saldo -= un_monto
             # self._saldo -= un_monto
-            self.__extraccionesRealizadas += 1
         else:
             raise ImposibleRealizarExtraccion('Imposible realizar la extracción.')
-        
-    def restaurarExtraciones(self) -> None:
-        """ Reataura la cantidad de extraciones """
-        self.__extraccionesRealizadas = 0
-        
-        
+
 
 if __name__ == "__main__":
-    cuenta = CajaDeAhorro('Niko', 100, 2)
-    
-    cuenta.depositar(1000)
-    
-    print(cuenta.saldo)
-
-    # devuelve si posee el atributo
-    # print(hasattr(cuenta, 'saldo'))
+    pass

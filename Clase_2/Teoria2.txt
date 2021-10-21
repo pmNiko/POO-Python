@@ -11,9 +11,20 @@ Ejemplo:
     class ImposibleRealizarExtraccion(Exception):
         """ Excepción para definir que una extracción 
         no puede realizarse """
-        def __init__(self, mensaje="", informacion=""):
-            self.mensaje = mensaje
-            self.informacion = informacion
+        pass
+
+    if __name__ == '__main__':
+        try:
+            raise ImposibleRealizarExtraccion({"mensaje":"Monto no disponible." })
+        except ImposibleRealizarExtraccion as error:
+            mensaje = error.args[0]
+            print(mensaje["mensaje"])
+
+        
+        try:
+            raise ImposibleRealizarExtraccion("Monto no disponible.")
+        except ImposibleRealizarExtraccion as error:
+            print(error)
 
 
 
@@ -48,3 +59,28 @@ Veamos el siguiente caso.
     👉🏻 Ambas cuentas permiten depositar dinero.
     👉🏻 Las cuentas corrientes tienen la particularidad de poder
        extraer un determinado monto en descubierto.
+
+    
+    🛠 Ambas clases comparten cosas:
+        👉🏻 Representan conceptualmente una cuenta bancaria
+        👉🏻 Las variales de instancia usuario y saldo
+        👉🏻 La implementación de los metodos:
+            - saldo
+            - usuario
+            - depositar
+
+    🛠 Jerarquia de clases:
+        👉🏻 Se reúne el comportamiento y la estructura común en 
+           una clase, la cual cumplirá el rol de superclase.
+        👉🏻 Se coforma una jerarquía de clases. 
+        👉🏻 Luego otras clases pueden cumplir el rol de subclases, 
+           heredando ese comportamiento y estructura en comun.
+
+    
+    📚 Superclase CuentaBancaria
+
+
+
+Testear los metodos concretos de las classes abstractas:
+   fuente: https://pythonin1minute.com/how-to-unit-test-abstract-base-classes-in-python/
+   fuente: https://www.it-swarm-es.com/es/python/python-prueba-de-una-clase-base-abstracta/941902587/

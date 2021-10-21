@@ -1,5 +1,6 @@
 import unittest
 from cajaDeAhorro import CajaDeAhorro
+from excepciones import ImposibleRealizarExtraccion
 
 
 class TestCajaDeAhorro(unittest.TestCase):
@@ -19,9 +20,10 @@ class TestCajaDeAhorro(unittest.TestCase):
         """ Se deposita un monto en una caja de ahorro """
         self.assertEqual(self.cuenta.saldo, 0)
 
+        self.cuenta.depositar(100)
         self.cuenta.depositar(1000)
 
-        self.assertEqual(self.cuenta.saldo, 1000)
+        self.assertEqual(self.cuenta.saldo, 1100)
         
     
     def test_NoSePuedeExtreaerUnMonto(self):
@@ -51,7 +53,7 @@ class TestCajaDeAhorro(unittest.TestCase):
         """ Se intenta realizar una extracción superior al saldo """
         self.assertEqual(self.cuenta.saldo, 0)
 
-        with self.assertRaisesRegex(ValueError, "Imposible realizar la extracción."):
+        with self.assertRaisesRegex(ImposibleRealizarExtraccion, "Imposible realizar la extracción."):
             self.cuenta.extraer(500)
 
         self.assertEqual(self.cuenta.saldo, 0)
@@ -78,7 +80,7 @@ class TestCajaDeAhorro(unittest.TestCase):
         self.cuenta.extraer(100)
         self.cuenta.extraer(100)
         
-        with self.assertRaisesRegex(ValueError, "Imposible realizar la extracción."):
+        with self.assertRaisesRegex(ImposibleRealizarExtraccion, "Imposible realizar la extracción."):
             self.cuenta.extraer(100)
         self.assertEqual(self.cuenta.extraccionesRealizadas, 2)
         

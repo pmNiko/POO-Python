@@ -61,7 +61,7 @@ class MiFecha(object):
         return not self <= una_fecha
 
     def entreDosFechas(self, fecha_inicio, fecha_fin):
-        return super().entre(fecha_inicio, fecha_fin)
+        # return super().entre(fecha_inicio, fecha_fin)
         return fecha_inicio <= self and fecha_fin >= self
 
 

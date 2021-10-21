@@ -63,7 +63,7 @@ class TestMiFecha(unittest.TestCase):
         _10_4_2020 = MiFecha(10, 4, 2020)
         _30_4_2020 = MiFecha(30, 4, 2020)
 
-        self.assertTrue(_10_4_2020.entre(self._2_4_2020, _30_4_2020))
+        self.assertTrue(_10_4_2020.entreDosFechas(self._2_4_2020, _30_4_2020))
 
     # ---- Test una fecha no se encuentra entre dos fechas --------- #
 
@@ -71,7 +71,7 @@ class TestMiFecha(unittest.TestCase):
         _10_4_2020 = MiFecha(10, 4, 2020)
         _30_4_2020 = MiFecha(30, 4, 2020)
 
-        self.assertFalse(self._2_4_2020.entre(_10_4_2020, _30_4_2020))
+        self.assertFalse(self._2_4_2020.entreDosFechas(_10_4_2020, _30_4_2020))
 
 
 if __name__ == "__main__":
