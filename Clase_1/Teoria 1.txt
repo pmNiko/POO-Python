@@ -83,9 +83,9 @@ ________________________________________________________________________________
     👉🏻 Los metodos y el estado interno del objeto quedan escondidos
         para cualquier otro objeto. Es el objeto quien decide que 
         se publica.
-    👉🏻 Es la cuañidad de los objetos de ocultar los detalles de 
+    👉🏻 Es la cualidad de los objetos para ocultar los detalles de 
        implementación y su estado interno al mundo exterior.
-    👉🏻 Motiva a un bajo acoplamiento entre objetos.
+    👉🏻 Motiva a un bajo acoplamiento entre estos.
     👉🏻 Permite que el software escale mejor frente a cambios.
     👉🏻 Se desarrolla en terminos del protocolo.
 
@@ -102,7 +102,7 @@ ________________________________________________________________________________
     Los objetos se comunican a través de mensajes:
       👉🏻 unarios           'MAYUSCULAS'.lower()
       👉🏻 binarios          3 + 5  _____  4 <= 10
-      👉🏻 palabra clave     contador.sumar(10)
+      👉🏻 palabra clave     calculadora.sumar(10)
 
 
 

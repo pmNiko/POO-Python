@@ -33,14 +33,14 @@ if __name__ == "__main__":
     print(objeto_contador.valor)  # <= Verificamos su valor inicial
 
     # Accionamos el metodo para incrementar el valor del contador
-    objeto_contador.incrementar()
-    print(objeto_contador.valor)   # <= Verificamos su nuevo valor
+    # objeto_contador.incrementar()
+    # print(objeto_contador.valor)   # <= Verificamos su nuevo valor
 
-    # Accionamos el metodo para decrementar el valor del contador
-    objeto_contador.decrementar()
-    print(objeto_contador.valor)   # <= Verificamos su nuevo valor
+    # # Accionamos el metodo para decrementar el valor del contador
+    # objeto_contador.decrementar()
+    # print(objeto_contador.valor)   # <= Verificamos su nuevo valor
 
-    try:
-        objeto_contador.decrementar()
-    except ValueError as error:
-        print(error)
+    # try:
+    #     objeto_contador.decrementar()
+    # except ValueError as error:
+    #     print(error)
