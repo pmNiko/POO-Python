@@ -17,7 +17,7 @@ Propiedades:
       🔐  protected: son accedidas por la clase que la define o su decendencia
       ⛔️  private: son accedidas solo por la clase que la define
 
-    A las propiedades accederemos a ellas mediante el uso de Guetters y Setters
+    A las propiedades accederemos mediante el uso de Guetters y Setters
     De esta manera Python utiliza el decorador @property para definir el acceso a dichas propiedades.
 
     Por ejemplo en el caso de tener una propiedad privada __valor tendriamos el siguiente escenario:
