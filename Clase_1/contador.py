@@ -12,8 +12,8 @@ class Contador(object):
     valor = 0
 
     # metodos de la clase Contador
-    def incrementar(self):
-        """ Incrementa en 1 el valor del contador. """
+    def incrementar(self) -> None:
+        """ Incrementa en 1 el valor del contador y no recibe parametros. """
         self.valor = self.valor + 1
         # self.valor += 1
 
