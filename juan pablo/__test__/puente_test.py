@@ -4,7 +4,7 @@ from puente import Puente
 class TestPuente(unittest.TestCase):
     def setUp(self) -> None:
         self.puente = Puente(1)
-
+        
 
     def test_verSiLaVallaEstaAlta(self):
         """ Un puente puede saber si su valla esta alta """
@@ -27,3 +27,11 @@ class TestPuente(unittest.TestCase):
         self.puente.subirLaValla() 
 
         self.assertTrue(self.puente.laVallaEstaAlta())
+
+    
+        
+
+        
+
+
+        
