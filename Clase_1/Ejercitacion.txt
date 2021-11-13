@@ -157,3 +157,11 @@ ______________________________________________________
         Realizar los test necesarios que validen 
         el comportamiento.  
 """
+
+"""
+    Ejercicio 9:
+        Extienda el modelo del Robot para que ahora pueda recibir 
+        un disparo. Recibir un disparo le consume el 30% de su bateria.
+
+        Realice los test necesarios que validen su comportamiento.
+"""
