@@ -137,3 +137,31 @@
 
        📚 Realizar los test que validen su comportamiento.
 """
+
+"""
+    Usted trabaja en una empresa que se dedica a la entrega de paquetes y desea optimizar los costos de
+    envíos. La empresa cuenta con una flota de motos, autos y utilitarios para hacer los envíos, los cuales
+    poseen distintas características:
+        ✅ Las motos poseen un tanque de 11 litros y tienen una autonomía de 20 km por litro. Pueden llevar
+        cargas de hasta 2 kg.
+        ✅ Los autos poseen un tanque de 45 litros y tienen una autonomía de 10 km por litro. Pueden llevar
+        cargas de hasta 250 kg.
+        ✅ Los utilitarios poseen un tanque de 60 litros y tienen una autonomía de 9 km por litro. Pueden
+        llevar cargas de hasta 400 kg.
+
+    Su modelo debe permitir:
+        👉🏻 Para un vehículo dado, saber la distancia máxima que puede recorrer.
+        👉🏻 Para un vehículo dado, saber el consumo de nafta cada 100 km.
+        👉🏻 Para una flota de vehículos, encontrar el vehículo mas económico para llevar una carga de X kg a
+        una distancia de Y km.
+
+    Usted debe:
+        a) Implementar las clases necesarias para modelar su solución con los tests de unidad
+        correspondientes.
+        b) Mostrar en un playground cómo crear una flota compuesta por una moto, un auto y un utilitario.
+        c) Utilizando la flota creada anteriormente, muestre cómo obtener el vehículo mas económico para
+        realizar los siguientes envíos:
+            1. Una carga de 1 kg a 3 km de distancia.
+            2. Una carga de 2 kg a 300 km de distancia.
+            3. Una carga de 250 kg a 300 km de distancia.
+"""
