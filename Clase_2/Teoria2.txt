@@ -1,0 +1,86 @@
+
+    Definiendo Excepciones Personalizadas 
+
+
+Para crear Excepciones Personalizadas podemos hacer uso de 
+todo lo aprendido y basandonos en el comcepto de Herencia 
+crear una subclase de Exception
+
+Ejemplo:
+
+    class ImposibleRealizarExtraccion(Exception):
+        """ Excepción para definir que una extracción 
+        no puede realizarse """
+        pass
+
+    if __name__ == '__main__':
+        try:
+            raise ImposibleRealizarExtraccion({"mensaje":"Monto no disponible." })
+        except ImposibleRealizarExtraccion as error:
+            mensaje = error.args[0]
+            print(mensaje["mensaje"])
+
+        
+        try:
+            raise ImposibleRealizarExtraccion("Monto no disponible.")
+        except ImposibleRealizarExtraccion as error:
+            print(error)
+
+
+
+Aplicando la excepción en el metodo de la clase CajaDeAhorro
+
+    ----- ------------       ----------    --------------
+    def extraer(self, un_monto: float):
+        """ Extrae un monto de la cuenta, sino arroja la excepción: 
+            -> ImposibleRealizarExtraccion('Monto no disponible.')"""
+        if self.puedeExtraer(un_monto):
+            self.__saldo -= un_monto
+            self.__extraccionesRealizadas += 1
+        else:
+            raise ImposibleRealizarExtraccion('Monto no disponible.')
+    ---- --------------     ------------     -----------------
+
+Fuente: https://ellibrodepython.com/definir-excepcion
+
+
+Ahora ya pueden realizar sus propias Exception cuando sea necesario.
+
+_____________________________________________________________________
+
+Veamos el siguiente caso.
+
+    🎗 Cuentas Bancarias
+
+    Un banco tiene dos clases de cuentas bancarias:
+        🎫 Cajas de ahorro
+        🎫 Cuentas corrientes
+
+    👉🏻 Ambas cuentas permiten depositar dinero.
+    👉🏻 Las cuentas corrientes tienen la particularidad de poder
+       extraer un determinado monto en descubierto.
+
+    
+    🛠 Ambas clases comparten cosas:
+        👉🏻 Representan conceptualmente una cuenta bancaria
+        👉🏻 Las variales de instancia usuario y saldo
+        👉🏻 La implementación de los metodos:
+            - saldo
+            - usuario
+            - depositar
+
+    🛠 Jerarquia de clases:
+        👉🏻 Se reúne el comportamiento y la estructura común en 
+           una clase, la cual cumplirá el rol de superclase.
+        👉🏻 Se coforma una jerarquía de clases. 
+        👉🏻 Luego otras clases pueden cumplir el rol de subclases, 
+           heredando ese comportamiento y estructura en comun.
+
+    
+    📚 Superclase CuentaBancaria
+
+
+
+Testear los metodos concretos de las classes abstractas:
+   fuente: https://pythonin1minute.com/how-to-unit-test-abstract-base-classes-in-python/
+   fuente: https://www.it-swarm-es.com/es/python/python-prueba-de-una-clase-base-abstracta/941902587/

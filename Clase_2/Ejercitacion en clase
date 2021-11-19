@@ -1,0 +1,24 @@
+   
+   Video club
+   
+    Usted debe realizar un sistema para el manejo de películas en un video club. De las películas se sabe su
+    título y duración y de los clientes su nombre, dni y dirección. En el video club existen diversas copias de
+    las películas, las cuales pueden ser alquiladas por los clientes por un plazo de tres días.
+
+        Su sistema debe permitir:
+            • Indicar que un cliente alquiló una película.
+            • Indicar que un cliente devolvió una película.
+            • Para un cliente dado saber qué películas debe.
+
+        Extensiones:
+            • Saber qué clientes deben al menos una película.
+            • Saber qué clientes tienen su alquiler vencido (un alquiler se considera vencido si ya pasaron los
+            tres días desde que el cliente se llevó la copia).
+            • No permitir que un cliente alquile una película si tiene mas de un alquiler vencido.
+            • Para un alquiler vencido, calcular el costo extra a pagar. Dicho costo se calcula como $30 por día
+            de mora.
+
+
+  👉🏻 Fragmentar el problema
+  👉🏻 Reconocer puntos claves - las incognitas
+  👉🏻 Comenzar con el fragmento mas chico e ir escalando la solución
