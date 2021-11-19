@@ -22,7 +22,7 @@ class Usuario(object):
 
     # ----- Metodos de la clase ----- #
 
-    def validarPassword(self, un_password):
+    def validarPassword(self, un_password) -> bool:
         """ Metodo encargado de validar el password """
         return self.password == un_password
 
@@ -32,3 +32,24 @@ class Usuario(object):
             self.__password = nuevo_password
         else:
             raise ValueError('Sus credenciales no son validas.')
+        
+
+
+if __name__ == '__main__':
+    
+    usuario = Usuario("Niko", "1234", "niko@gmail")
+  
+    
+    print(usuario.password)
+    
+    usuario.cambiarPassword("1234", "superpass")
+    
+    print(usuario.password)
+    
+    respuesta = usuario.validarPassword("1234")
+    
+    print(respuesta)
+    
+    
+
+    

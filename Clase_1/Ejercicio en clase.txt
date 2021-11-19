@@ -1,0 +1,50 @@
+
+    Resolver los ejercicios de manera gradual generando un test 
+    por mensaje de objeto.
+
+"""
+    Modelar: un auto 
+
+        atributos: 
+            - una velocidad, al iniciar esta parado
+
+        puede:
+            - puede ver su velocidad
+            - puede acelerar una determinada velocidad
+            - puede detenerse 
+            - pude saber si esta en movimiento
+"""
+
+"""
+    Modelar: una valla
+
+        atributos: 
+            - estado por defecto esta levantada
+
+        puede:
+            - ver su estado
+            - cambiar su estado
+"""
+
+"""
+    Modelar: un Puente
+
+        atributos: 
+            - numero
+            - valla
+
+        puede:
+            - ver su numero
+            - ver si la valla esta alta
+            - bajar la valla
+            - levantar la valla
+"""
+
+"""
+    Extender el modelo del puente para que pueda recibir un auto como 
+    parametro. 
+        - en caso de que la valla del puente este levantada los autos 
+          pueden circular a 40km/h
+        - si la valla esta baja le envia el mensaje detenerse al vehiculo
+          que lo transita.
+"""
