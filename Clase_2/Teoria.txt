@@ -1,9 +1,11 @@
 
    """ Herencia """
 
-  -> Herencia: esta es una de las caracteristicas mas potentes de este paradigma ya que permite 
-     realizar relaciones jerarquicas entre clases, de forma que atributos y metodos seran heredados
-     por las subclases, esto fomenta la reutilización de codigo.
+  -> Herencia:
+      Nos permite realizar relaciones jerarquicas entre clases, 
+      de forma que atributos y metodos seran heredados por las subclases, 
+      esto fomenta la reutilización de codigo.
+
      Asi podemos ver que la clase Animal tiene su estado y comportamiento, entonces podemos crear una 
      subclase Perro la cual heredará atributos y metodos de la clase Animal.
 
@@ -14,22 +16,20 @@ ________________________________________________________________________________
 
    Qué es una clase abstracta
 
-      Las clases abstractas, como su nombre lo indica, son algo abstracto, 
-      no representan algo específico y las podemos usar para crear otras clases. 
-      No pueden ser instanciadas, por lo que no podemos crear nuevos objetos con ellas.
-      Solamente se pueden usar para construir subclases. 
-      Permitiendo así tener una única implementación de los métodos compartidos, evitando la duplicación de código.
+      ✅ Las clases abstractas no representan algo específico y las podemos usar para crear otras clases. 
 
-      Resumiendo, las clases abstractas define una interfaz común para las subclases. 
-      Proporciona atributos y métodos comunes para todas las subclases evitando así la necesidad de duplicar código. 
-      Imponiendo además lo métodos que deber ser implementados para evitar inconsistencias entre las subclases.
+      ✅ No pueden ser instanciadas, por lo que no podemos crear nuevos objetos con ellas.
+
+      ✅ Solamente se pueden usar para construir subclases. 
+
+      📚 Resumiendo, las clases abstractas define una interfaz común para las subclases. 
+      📚 Imponiendo además lo métodos que deber ser implementados para evitar inconsistencias entre las subclases.
+
 
    Creación de clases abstractas en Python
 
-      Para poder crear clases abstractas en Python es necesario importar la clase ABC y el decorador abstractmethod 
-      del modulo abc (Abstract Base Classes). Un módulo que se encuentra en la librería estándar del lenguaje, 
-      por lo que no es necesario instalar. 
-      Así para definir una clase privada solamente se tiene que crear una clase heredada de ABC con un método abstracto.
+      Para poder crear clases abstractas en Python es necesario importar la clase "ABC" y el decorador "abstractmethod" 
+      del modulo "abc" (Abstract Base Classes). 
 
    from abc import ABC, abstractmethod
 
@@ -39,21 +39,17 @@ ________________________________________________________________________________
             pass
 
    
-   Ahora si se intenta crear una instancia de la clase animal, 
-   Python no lo permitirá indicando que no es posible. 
-   Es importante notar que que si la clase no hereda de ABC o contiene por lo menos un método abstracto, 
-   Python permitirá instancias las clases.
-
+   Ahora si se intenta crear una instancia de la clase animal, Python no lo permitirá indicando que no es posible. 
 
    Por otro lado, desde los métodos de las subclases podemos llamar a las implementaciones de la clase abstracta 
-   con el comando super() seguido del nombre del método.
+   con el metodo super() seguido del nombre del método.
 
       class Animal(ABC):
+
          @abstractmethod
          def mover(self):
-            pass
+            pass         
          
-         @abstractmethod
          def comer(self):
             print('Animal come')
 
@@ -86,9 +82,8 @@ ________________________________________________________________________________
    y "morfo" que refiere a forma, su conjunto define la cualidad de 
    tener multiples formas.
 
-   En POO, este concepto hace referencia a que varios objetos de clases distintas
-   compartiendo una superclase en común, pueden definir un mismo metodo de 
-   maneras distintas. 
+   Dos objetos son polimorficos con respecto a un mensaje si pueden entender ese mensaje, 
+   aún cuando reaccionen de manera diferente al mismo.
 
      Ejercicio:
       Clases:
@@ -107,11 +102,16 @@ ________________________________________________________________________________
    sean distintas.
 
 ____________________________________________________________________________________________________
+   Overloading
+
+   Veamos el objeto Fecha
+____________________________________________________________________________________________________
+
 Magnitudes lineales
    👉🏻 Cualquier magnitud que se pueda comparar linealmente puede utilizar la misma implementacion. 
    👉🏻 Solo necesita definir dos conceptos:
-      -> igualdad
-      -> ser menor a otra magnitud de mi clase
+      -> igualdad                                     ==
+      -> ser menor a otra magnitud de mi clase        <
       
 Vemaos la implementacion de la clase mi_fecha
    la clase MiFecha:
@@ -130,22 +130,23 @@ Pongamos en práctica.
 Modelemos la clase MagnitudLineal 
 
    Protocolo:
-      👉🏻 <= otra_magnitud   # metodo concreto
-      👉🏻 > otra_magnitud    # metodo concreto
-      👉🏻 >= otra_magnitud   # metodo concreto
-      👉🏻 entre(una_magnitud, otra_magnitud)   # metodo concreto
+      👉🏻 <= otra_magnitud                       # metodo concreto
+      👉🏻 > otra_magnitud                        # metodo concreto
+      👉🏻 >= otra_magnitud                       # metodo concreto
+      👉🏻 entre(una_magnitud, otra_magnitud)     # metodo concreto
 
 
-      👉🏻 == otra_magnitud    # metodo abstracto
-      👉🏻 <  otra_magnitud    # metodo abstracto
+      👉🏻 == otra_magnitud                       # metodo abstracto
+      👉🏻 <  otra_magnitud                       # metodo abstracto
 
 Por ultimo en MiFecha comentemos los metodos: "__le__" - "__ge__" - "__ge__" - "entreDosFechas"
 Podemos ver que al correr los test nos acusan error porque no encuentra 
 los metodos.
 
-Ahora importemos la clase MagnitudLineal y hagamos que MiFecha herede de ella.
-Al correr los test 🧪 estos pasan correctamente.
-Excepto los del mensaje entreDosFechas puesto que no encuentra esa definición de mensaje.
+ - Ahora importemos la clase MagnitudLineal y hagamos que MiFecha herede de ella.
+ - Al correr los test 🧪 estos pasan correctamente ✅.
+
+Excepto los del mensaje "entreDosFechas" puesto que no encuentra esa definición de mensaje.
 podemos hacer dos cosas:
    -> Envolver el mensaje de la superclase 
          ejemplo: 
@@ -154,7 +155,7 @@ podemos hacer dos cosas:
                            dos fechas que recibe como parametro."""
                      return super().entre(fecha_inicio, fecha_fin)
 
-   -> Cambiar los nombres en el setup de test 
+   -> Cambiar los nombres en la suite de test 
 
 Realicemos el mismo procedimiento con Numero. 
 corran los test.
