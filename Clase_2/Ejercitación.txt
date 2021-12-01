@@ -72,7 +72,7 @@
 """
 
 """
-    Ejercicio 3:
+    Ejercicio 4:
         La empresa para la que usted trabaja planea desarrollar un software para la visualización de figuras geométricas. Para esto se le pide que:
         a) Modele el concepto de una círculo en términos de su centro y su radio.
         b) Pueda saber si un punto se encuentra dentro de un círculo.
@@ -88,7 +88,7 @@
 """
 
 """
-    Ejercicio 4:
+    Ejercicio 5:
         Para un sistema de cátedras en una facultad se requiere llevar un registro estudiantes y las notas de los parciales que han rendido. De cada estudiante se sabe su nombre y apellido.
         Implemente las clases necesarias y sus correspondientes tests para poder contestar a las siguientes preguntas:
         a) Saber si un estudiante aprobó la cursada (la cursada se considera aprobada si todas sus notas son
@@ -98,13 +98,7 @@
         c) Saber la cantidad de notas menores a 4 que sacó un estudiante.
 """
 
-"""
-    Ejercicio 5:
-        Modifique el ejercicio 2 para que:
-            a) Sea obligatorio pasar el valor al crear una nueva instancia de la clase Porcentaje.
-            b) No sea posible modificar el valor del porcentaje una vez creado el objeto.
-            c) Modifique los tests de unidad en forma acorde.
-"""
+
 
 """
     Ejercicio 6:
