@@ -1,0 +1,68 @@
+
+_____________________ 🍀 Exportando modulos propios 🍀 _____________________
+
+    👉🏻 Generen un nuevo proyecto y dentro coloquen el modulo contador.py 
+
+    👉🏻 Ahora hagan un archivo setup.py y dentro coloquen el siguiente código:
+
+
+    from setuptools import setup
+
+    setup(
+        name="contador",
+        version="1.0.0",
+        description="Modulo contador",
+        author="nikoDev",
+        author_email="nikolas090189@gmail.com",
+        url="https://github.com/pmNiko",
+        py_modules=["contador"]
+    )
+
+    👉🏻 Ahora exporten el modulo con el siguiente comando:
+
+        $ python3 setup.py sdist
+
+    Esto genera una carpeta con el nombre dist/
+    Dentro esta el modulo conprimido de nuestro contador.
+
+    👉🏻  Eliminen el contador.py
+    👉🏻  Creen un entorno virtual con venv
+    👉🏻  Activenlo y listen las librerias 
+
+        $ python3 -m venv entorno_con_venv
+        $ pip list
+        Package    Version
+        ---------- -------
+        pip        21.1.3
+        setuptools 56.0.0
+
+    👉🏻  Por ultimo corran el comando 
+
+        $ pip install dist/contador-1.0.0.tar.gz 
+
+                ó
+
+        $ pip3 install dist/contador-1.0.0.tar.gz 
+
+
+        $ pip list
+        Package    Version
+        ---------- -------
+        contador   1.0.0
+        pip        21.1.3
+        setuptools 56.0.0
+
+    🎗 Su contador esta listo para ser utilizado.
+
+    Para corroborar que su modulo funciona seleccionen el interprete 
+    Python con ctrl + shift + P 
+
+        Y elijan el interprete que dice entorno_con_venv
+
+    Creen un modulo: main.py e importen el modulo contador ya pueden acceder 
+    tanto a las clases como a sus metodos.
+
+
+    
+
+

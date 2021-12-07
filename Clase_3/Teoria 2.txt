@@ -1,0 +1,64 @@
+
+
+__________________________  🍀  Trabajando con entornos virtuales 🍀   __________________________
+
+    Activemos el entorno virtual y ejecutemos el comando 
+    
+        $ pip freeze
+
+        certifi==2021.10.8
+        charset-normalizer==2.0.9
+        idna==3.3
+        requests==2.26.0
+        urllib3==1.26.7
+
+    Este nos lista las dependencias que tiene instaladas nuestro entorno.
+    Mediante este ultimo comando vamos a crear el archivo requerimets.txt 
+    el cual contendrá el listado de dependencias que requiere nuestro proyecto.
+
+        $ pip freeze > requeriments.txt
+
+    Podemos el contenido con mediante el comando cat 
+
+        $ cat requeriments.txt
+
+
+    ✅ Desactivemos el entorno virtual con $ deactivate
+    ✅ Por ultimo vamos a crear un segundo entorno virtual con venv
+
+        $ python -m venv entorno_con_venv
+
+    👉🏻 Activemoslo con source entorno_con_venv/bin/activate
+
+        (entorno_con_venv) path.../$
+
+    👉🏻 Listemos librerias con:
+
+        $ pip list
+
+        Package    Version
+        ---------- -------
+        pip        21.1.3
+        setuptools 56.0.0
+
+    Ahora vamos a instlar las deppendencias indicadas en el archivo requeriments.txt
+
+        $ pip install -r requeriments.txt
+
+    
+    👉🏻 Listemos librerias con:
+    
+        $ pip list
+
+        Package            Version
+        ------------------ ---------
+        certifi            2021.10.8
+        charset-normalizer 2.0.9
+        idna               3.3
+        pip                21.1.3
+        requests           2.26.0
+        setuptools         56.0.0
+        urllib3            1.26.7
+
+______________________________________________________________________________________
+

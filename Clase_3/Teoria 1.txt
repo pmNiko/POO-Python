@@ -1,0 +1,80 @@
+📚 Entornos Virtuales en Python 📚
+
+    Es un espacio aislado del resto de nuestro sistema operativo, 
+    donde tendremos una serie de dependencias instaladas de manera local. 
+    Es como si especificaras un lugar desde donde Python tomará sus librerías, 
+    en lugar del predeterminado que usa tu sistema operativo. 
+    Estas dependencias son independientes de las que tengamos previamente 
+    instaladas en nuestro sistema operativo. 
+    Y, lo mejor, podemos tener tantos de estos espacios aislados como deseemos.
+
+                            ___https://coffeebytes.dev/por-que-usar-un-entorno-virtual-en-python/
+
+    Algunos gestores de entorno virtual disponibles:
+        🔐 virtualenv
+        🔐 pipenv
+        🔐 conda
+        🔐 poetry
+
+__________________________  🍀  Creacion de un entorno Virtual 🍀   __________________________
+
+    Para llevar adelante el ejercicio creen un nuevo proyecto, en el cual vamos a instalar 
+    virtualenv
+
+    fuente: https://docs.python-guide.org/dev/virtualenvs/
+
+    Instalamos y revisamos la version:
+
+        $ pip install virtualenv
+        $ virtualenv --version 
+
+    
+    👉🏻 Revisemos el listados de modulos instalados en python a nivel global.
+
+        $ pip list
+
+    
+    ✅ Creemos nuestro primer entorno virtual dentro de nuestro nuevo proyecto:
+
+        $ python -m virtualenv mi_entorno_virtual  
+
+            ó
+        $ virtualenv mi_entorno_virtual  
+
+    ✅ Ahora lo podemos activar con:
+
+        $ source mi_entorno_virtual/bin/activate
+
+    👉🏻  (mi_entorno_virtual) path/project$ 
+    el path ha cambiado. 
+
+
+    👉🏻 Revisemos el listados de modulos instalados en nuestro entorno virtual:
+
+        $ pip list
+
+        Podemos ver que no tenemos el listado global que vehiamos antes.
+
+    
+__________________________  🍀  Instalando librerias 🍀   __________________________
+
+    👉🏻  Vamos a instalar la libreria request
+
+        $ pip install requests
+        $ pip list
+
+    Ahora si podemos ver reflejada la libreria que acabamos de instalar en nuestro venv.
+
+
+_____________ 🍀  Corroborando el estado de nuestro entorno global 🍀   ________________
+
+    👉🏻  Desactivemos el entorno virtual:
+
+            $ deactivate
+    
+    Podemos ver como el bash vuelve a estar normal 
+    Por ultimo corroboremos el listado de nuestras librerias:
+
+            $ pip list
+
+________________________________________________________________________________________
