@@ -1,0 +1,64 @@
+    
+    __________ 🎗  Patrones de Diseño 🎗 __________
+
+    ✅ Soluciones reutilizables a problemas recurrentes.
+    ✅ No son diseños terminados o implementaciones concretas.
+    ✅ Son descripciones que pueden utilizarse en diferentes contextos.
+ 
+    • La idea original surge en el contexto de la arquitectura
+    • A Pattern Language: Towns, Buildings, Construction 
+        - Christopher Alexander (1977).
+
+    • Adaptado a la POO (y popularizado) por Erich
+        Gamma, Richard Helm, Ralph Johnson y John
+        Vlissides (The "Gang of Four").
+
+    • Contexto
+        • Las personas naturalmente prefieren las habitaciones con
+        iluminación natural de mas de un lado.
+        • Si hay dos habitaciones, una con sólo una ventana y otra
+        con dos ventanas en distintas paredes, las personas van a
+        preferir estar en la segunda.
+
+    • Luego
+        • Todas las habitaciones deberían tener iluminación natural
+        proveniente de mas de una zona.
+
+    • Es independientes del tipo de construcción (casa,
+        departamento, etc) o de los materiales utilizados.
+    • Describe una idea, no es un producto específico.
+
+
+    _________ 🗂 Template Method 🗂 __________
+    • Objetivo
+        • Definir el esqueleto de un algoritmo, delegando la
+            implementación de pasos concretos a las subclases.
+        • Permitir que las subclases redefinan el comportamiento
+            predefinido de algún paso de un algoritmo, sin alterar la
+            estructura del mismo.
+
+    • Aplicación
+        • Implementar el invariante de un algoritmo, delegando a las
+            subclases la parte variable.
+        • Cuando encontramos partes de código repetido en métodos
+            de las subclases y queremos factorizarlo.
+
+_____________________________________________________________________
+    Nota: 
+        • Evitar la “fiebre de los patrones”.
+        • Los patrones no son soluciones estrictas. 
+            Admiten variantes.
+
+    
+    Recursos:
+
+        • Design Patterns: Elements of Reusable Object-Oriented Software
+
+            Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+        • The Design Patterns Smalltalk Companion
+            • Sherman Alpert, Kyle Brown, Bobby Woolf.
+        • Head First Design Patterns
+            • Eric Freeman, Bert Bates, Kathy Sierra, Elisabeth Robson.
+        • http://www.oodesign.com/
+        • http://stackoverflow.com/questions/tagged/design-patterns
